@@ -1,3 +1,12 @@
+var ref = new Firebase("https://amber-inferno-3236.firebaseio.com");
+ref.authWithOAuthRedirect("google", function(error) {
+  if (error) {
+    console.log("Login Failed!", error);
+  } else {
+    // We'll never get here, as the page will redirect on success.
+  }
+});
+
 angular.module('todoApp', [])
   .controller('TodoListController', function() {
     var todoList = this;
@@ -27,4 +36,4 @@ angular.module('todoApp', [])
     };
   });
 
-  $(document).foundation();
+$(document).foundation();
