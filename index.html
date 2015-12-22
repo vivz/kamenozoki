@@ -5,8 +5,10 @@
   <head>
 
     <meta charset="utf-8" />
+    <title>Kamenozoki</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="js/app.js"></script>
     <link rel="stylesheet" href="css/foundation.css" />
@@ -24,7 +26,7 @@
 
       <a href="" ng-click="todoList.archive()">clear finished</a>
 
-      <ul class="unstyled">
+      <ul>
 
         <li ng-repeat="todo in todoList.todos">
           <input type="checkbox" ng-model="todo.done">
