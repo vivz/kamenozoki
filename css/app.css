@@ -1,4 +1,8 @@
+.container {
+  margin: 15px; }
+
 .done-true {
   text-decoration: line-through;
-  color: grey;
-}
+  color: grey; }
+
+/*# sourceMappingURL=app.css.map */
