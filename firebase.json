@@ -1,6 +1,6 @@
 {
   "firebase": "amber-inferno-3236",
-  "public": ".",
+  "public": "app",
   "ignore": [
     "firebase.json",
     "**/.*",
